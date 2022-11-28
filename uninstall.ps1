@@ -91,7 +91,7 @@ PnPUtil /scan-devices
 
 if (-not $NoPrompt) {
   $decision = $Host.UI.PromptForChoice(
-    '', 'Uninstallation is almost done, restart the computer to complete the process?', @('&Yes'; '&No'), 1)
+    '', 'Uninstallation is almost done, restart the computer to complete the process?', @('&Yes'; '&No'), 0)
 
   if ($decision -ne 0) {
     exit
